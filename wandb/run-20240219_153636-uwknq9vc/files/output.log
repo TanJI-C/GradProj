@@ -1,0 +1,1 @@
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.

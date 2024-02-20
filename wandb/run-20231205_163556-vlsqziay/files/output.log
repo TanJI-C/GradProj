@@ -1,0 +1,28 @@
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+[autoreload of util failed: Traceback (most recent call last):
+  File "C:\Users\TanJI\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 276, in check
+    superreload(m, reload, self.old_objects)
+  File "C:\Users\TanJI\AppData\Roaming\Python\Python310\site-packages\IPython\extensions\autoreload.py", line 475, in superreload
+    module = reload(module)
+  File "c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 169, in reload
+    _bootstrap._exec(spec, module)
+  File "<frozen importlib._bootstrap>", line 619, in _exec
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "d:\TanJI\Documents\document\Work\Research\DB4AI\2024届本科毕业论文（设计）工作指南(1)\TanJI\util.py", line 292
+    def get_dataloader(data_set, configs:
+                      ^
+SyntaxError: '(' was never closed
+]
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+{}
+{}
+<__main__.Args object at 0x000001552EAA3250>

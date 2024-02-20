@@ -1,0 +1,55 @@
+2024-02-19 15:36:36,087 INFO    StreamThr :29624 [internal.py:wandb_internal():86] W&B internal server running at pid: 29624, started at: 2024-02-19 15:36:36.087331
+2024-02-19 15:36:36,089 DEBUG   HandlerThread:29624 [handler.py:handle_request():146] handle_request: status
+2024-02-19 15:36:36,098 INFO    WriterThread:29624 [datastore.py:open_for_write():85] open: .\wandb\run-20240219_153636-uwknq9vc\run-uwknq9vc.wandb
+2024-02-19 15:36:36,099 DEBUG   SenderThread:29624 [sender.py:send():380] send: header
+2024-02-19 15:36:36,170 DEBUG   SenderThread:29624 [sender.py:send():380] send: run
+2024-02-19 15:36:36,173 INFO    SenderThread:29624 [sender.py:_maybe_setup_resume():759] checking resume status for None/DACE/uwknq9vc
+2024-02-19 15:36:37,309 INFO    SenderThread:29624 [dir_watcher.py:__init__():211] watching files in: .\wandb\run-20240219_153636-uwknq9vc\files
+2024-02-19 15:36:37,309 INFO    SenderThread:29624 [sender.py:_start_run_threads():1124] run started: uwknq9vc with start time 1708328196.089337
+2024-02-19 15:36:37,317 DEBUG   HandlerThread:29624 [handler.py:handle_request():146] handle_request: check_version
+2024-02-19 15:36:37,318 DEBUG   SenderThread:29624 [sender.py:send_request():407] send_request: check_version
+2024-02-19 15:36:37,716 DEBUG   HandlerThread:29624 [handler.py:handle_request():146] handle_request: run_start
+2024-02-19 15:36:37,733 DEBUG   HandlerThread:29624 [system_info.py:__init__():32] System info init
+2024-02-19 15:36:37,733 DEBUG   HandlerThread:29624 [system_info.py:__init__():47] System info init done
+2024-02-19 15:36:37,733 INFO    HandlerThread:29624 [system_monitor.py:start():194] Starting system monitor
+2024-02-19 15:36:37,734 INFO    SystemMonitor:29624 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-19 15:36:37,734 INFO    HandlerThread:29624 [system_monitor.py:probe():214] Collecting system info
+2024-02-19 15:36:37,742 INFO    SystemMonitor:29624 [interfaces.py:start():190] Started cpu monitoring
+2024-02-19 15:36:37,749 DEBUG   HandlerThread:29624 [system_info.py:probe():196] Probing system
+2024-02-19 15:36:37,749 INFO    SystemMonitor:29624 [interfaces.py:start():190] Started disk monitoring
+2024-02-19 15:36:37,763 INFO    SystemMonitor:29624 [interfaces.py:start():190] Started memory monitoring
+2024-02-19 15:36:37,779 INFO    SystemMonitor:29624 [interfaces.py:start():190] Started network monitoring
+2024-02-19 15:36:37,793 DEBUG   HandlerThread:29624 [system_info.py:_probe_git():181] Probing git
+2024-02-19 15:36:37,905 DEBUG   HandlerThread:29624 [system_info.py:_probe_git():189] Probing git done
+2024-02-19 15:36:37,905 DEBUG   HandlerThread:29624 [system_info.py:probe():244] Probing system done
+2024-02-19 15:36:37,905 DEBUG   HandlerThread:29624 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.9', 'heartbeatAt': '2024-02-19T07:36:37.749131', 'startedAt': '2024-02-19T07:36:36.073952', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'git@github.com:TanJI-C/GradProj.git', 'commit': '50663df8962ff5ad1164b9dca22ef7b0b446e1c6'}, 'email': '2795622656@qq.com', 'root': 'D:/TanJI/Documents/document/Work/Research/DB4AI/2024届本科毕业论文（设计）工作指南(1)/TanJI', 'host': 'TanJI', 'username': 'TanJI', 'executable': 'c:\\Users\\TanJI\\AppData\\Local\\Programs\\Python\\Python310\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 2100.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 2100.0}], 'disk': {'/': {'total': 224.28710556030273, 'used': 198.8946189880371}}, 'memory': {'total': 15.366016387939453}}
+2024-02-19 15:36:37,906 INFO    HandlerThread:29624 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-19 15:36:37,906 INFO    HandlerThread:29624 [system_monitor.py:probe():227] Publishing system info
+2024-02-19 15:36:37,906 DEBUG   HandlerThread:29624 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-02-19 15:36:37,907 DEBUG   HandlerThread:29624 [system_info.py:_save_pip():68] Saving pip packages done
+2024-02-19 15:36:37,908 INFO    HandlerThread:29624 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-19 15:36:37,926 DEBUG   SenderThread:29624 [sender.py:send():380] send: files
+2024-02-19 15:36:37,926 INFO    SenderThread:29624 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2024-02-19 15:36:37,947 DEBUG   HandlerThread:29624 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-19 15:36:37,947 DEBUG   SenderThread:29624 [sender.py:send_request():407] send_request: stop_status
+2024-02-19 15:36:37,950 DEBUG   HandlerThread:29624 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-19 15:36:37,991 DEBUG   HandlerThread:29624 [handler.py:handle_request():146] handle_request: pause
+2024-02-19 15:36:37,991 INFO    HandlerThread:29624 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-02-19 15:36:37,992 INFO    HandlerThread:29624 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-19 15:36:37,992 DEBUG   SystemMonitor:29624 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-19 15:36:37,992 DEBUG   SystemMonitor:29624 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-19 15:36:37,992 INFO    HandlerThread:29624 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-19 15:36:37,992 DEBUG   SystemMonitor:29624 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-19 15:36:37,993 INFO    HandlerThread:29624 [interfaces.py:finish():202] Joined disk monitor
+2024-02-19 15:36:37,993 INFO    HandlerThread:29624 [interfaces.py:finish():202] Joined memory monitor
+2024-02-19 15:36:37,993 INFO    HandlerThread:29624 [interfaces.py:finish():202] Joined network monitor
+2024-02-19 15:36:38,314 INFO    Thread-16 :29624 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20240219_153636-uwknq9vc\files\wandb-metadata.json
+2024-02-19 15:36:38,314 INFO    Thread-16 :29624 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20240219_153636-uwknq9vc\files\requirements.txt
+2024-02-19 15:36:38,447 DEBUG   SenderThread:29624 [sender.py:send():380] send: telemetry
+2024-02-19 15:36:38,447 DEBUG   SenderThread:29624 [sender.py:send():380] send: metric
+2024-02-19 15:36:38,447 DEBUG   SenderThread:29624 [sender.py:send():380] send: telemetry
+2024-02-19 15:36:38,447 DEBUG   SenderThread:29624 [sender.py:send():380] send: metric
+2024-02-19 15:36:38,447 WARNING SenderThread:29624 [sender.py:send_metric():1331] Seen metric with glob (shouldn't happen)
+2024-02-19 15:36:38,447 DEBUG   SenderThread:29624 [sender.py:send():380] send: config
+2024-02-19 15:36:38,448 DEBUG   SenderThread:29624 [sender.py:send():380] send: stats
+2024-02-19 15:36:39,139 INFO    wandb-upload_0:29624 [upload_job.py:push():131] Uploaded file C:\Users\TanJI\AppData\Local\Temp\tmp2pe2ocg2wandb\ozf48evl-wandb-metadata.json
