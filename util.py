@@ -10,36 +10,68 @@ from typing import Any, List, Optional, Sequence, Tuple
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
+def q_error(pred, target):
+    return torch.max(pred / target, target / pred)
 
-# data utils:
-#       The main implementation is to encode the plan and obtain the dataset
+def get_statistics_of_workloads(plans, target_path):
+    runtimes = []
+    cards = []
+    costs = []
+    node_types = set()
 
-class DBManager:
-    def __init__(self, db_configuration) -> None:
-        self.db_configuration = db_configuration
-        self._conn = psycopg2.connect(
-            dbname=db_configuration.dbname,
-            user=db_configuration.user,
-            password=db_configuration.password,
-            host=db_configuration.host
-        )
-        self._cursor = self._conn.cursor()
-        self._cursor.execute(f"select setseed({db_configuration.seed})")
-        self._cursor.execute("load  'pg_hint_plan")
-    def _configuration_switch(self, configuration: Optional[Sequence[str]] = None) -> None:
-        if configuration is None:
-            return
-        for parameter in configuration:
-            self._cursor.execute(f"show {parameter}")
-            val = self._cursor.fetchone()[0]
-            new_val = 'OFF' if val == 'ON' else 'ON'
-            self._cursor.execute(f"set {parameter} TO {new_val}")
+    for plan in plans:
+        plan = plan['Plan']
+        runtimes.append(plan['Actual Total Time'])
+        costs.append(plan['Total Cost'])
+        cards.append(plan['Plan Rows'])
+        node_types.add(plan['Node Type'])
 
-    def get_query_plan_tree(self, query: str, configuration: Optional[Sequence[str]] = None): #explain语句会同时执行查询吗？
-        self._configuration_switch(configuration)
-        explain_query = f"explain (format json, analyze, buffers) {query}"
-        self._cursor.execute(explain_query)
-        return self._cursor.fetchone()[0][0]
+        stack = [plan]
+        while len(stack) > 0:
+            node = stack.pop()
+            if 'Plans' in node:
+                for child in node['Plans']:
+                    runtimes.append(child['Actual Total Time'])
+                    costs.append(child['Total Cost'])
+                    cards.append(child['Plan Rows'])
+                    node_types.add(child['Node Type'])
+                    stack.append(child)
+
+    runtimes = np.array(runtimes)
+    costs = np.array(costs)
+    cards = np.array(cards)
+    node_types = list(node_types)
+
+    statistics = {
+        "Actual Total Time": {
+            "type": 'numeric',
+            "max": float(np.max(runtimes)),
+            "min": float(np.min(runtimes)),
+            "center": float(np.median(runtimes)),
+            "scale": float(np.quantile(runtimes, 0.75)) - float(np.quantile(runtimes, 0.25)),
+        },
+        "Plan Rows": {
+            "type": 'numeric',
+            "max": float(np.max(cards)),
+            "min": float(np.min(cards)),
+            "center": float(np.median(cards)),
+            "scale": float(np.quantile(cards, 0.75)) - float(np.quantile(cards, 0.25)),
+        },
+        "Total Cost": {
+            "type": 'numeric',
+            "max": float(np.max(costs)),
+            "min": float(np.min(costs)),
+            "center": float(np.median(costs)),
+            "scale": float(np.quantile(costs, 0.75)) - float(np.quantile(costs, 0.25)),
+        },
+        "node_types": {
+            "type": 'categorical',
+            "value_dict": {node_type: i for i, node_type in enumerate(node_types)},
+        },
+    }
+
+    with open(target_path, 'w') as f:
+        json.dump(statistics, f)
 
 class TreeNode:
     def __init__(self, time_stamp, nodeType, cost, card, join, filt, label, dep) -> None:
@@ -218,17 +250,19 @@ class Encoder:
         return filter
 
     # format data and return plan trees json
-    def format_imdb(files_path: [str | List[str]]) -> List[dict]:
+    def format_imdb(files_path) -> List[dict]:
         if isinstance(files_path, str):
             files_path = [files_path]
-        data_frames = pd.DataFrame()
-        for file_name in files_path:
+        nodes = []
+        for db_id, file_name in enumerate(files_path):
             df = pd.read_csv(file_name)
-            data_frames = pd.concat([data_frames, df], ignore_index=True)
-        nodes = [json.loads(plan) for plan in data_frames['json']]
+            for plan in df['json']: # 为每一行加上一个新的属性，方便分割数据集
+                json_item = json.loads(plan)
+                json_item['database_id'] = db_id
+                nodes.append(json_item)
         return nodes
     # format data and return plan trees json
-    def format_workload(files_path: [str | List[str]]) -> List[dict]:
+    def format_workload(files_path) -> List[dict]:
         if isinstance(files_path, str):
             files_path = [files_path]
         nodes = []

@@ -31,3 +31,6 @@ config: {}
 2024-02-19 15:36:37,950 INFO    MainThread:22692 [wandb_run.py:_config_callback():1342] config_cb None None {}
 2024-02-19 15:36:37,991 INFO    MainThread:22692 [jupyter.py:save_ipynb():373] not saving jupyter notebook
 2024-02-19 15:36:37,991 INFO    MainThread:22692 [wandb_init.py:_pause_backend():435] pausing backend
+2024-02-19 15:38:14,221 INFO    MainThread:22692 [wandb_init.py:_resume_backend():440] resuming backend
+2024-02-19 15:38:14,316 INFO    MainThread:22692 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-02-19 15:38:14,317 INFO    MainThread:22692 [wandb_init.py:_pause_backend():435] pausing backend
