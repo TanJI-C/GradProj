@@ -51,6 +51,18 @@ _wandb:
     - 1: trainer/global_step
       6:
       - 3
+    - 1: train_loss
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: val_loss
+      5: 1
+      6:
+      - 1
 project_name:
   desc: null
   value: TanJI
@@ -84,7 +96,7 @@ pad_length:
   value: 20
 node_length:
   desc: null
-  value: 18
+  value: 21
 hidden_dim:
   desc: null
   value: 192

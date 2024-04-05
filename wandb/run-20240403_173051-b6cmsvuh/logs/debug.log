@@ -1,0 +1,42 @@
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Configure stats pid to 26736
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Loading settings from C:\Users\TanJI\.config\wandb\settings
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Loading settings from d:\TanJI\Documents\document\Work\Research\DB4AI\2024届本科毕业论文（设计）工作指南(1)\TanJI\wandb\settings
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-03 17:30:51,873 INFO    MainThread:26736 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:_log_setup():524] Logging user logs to .\wandb\run-20240403_173051-b6cmsvuh\logs\debug.log
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:_log_setup():525] Logging internal logs to .\wandb\run-20240403_173051-b6cmsvuh\logs\debug-internal.log
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019FA0381540>
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:init():564] calling init triggers
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:init():614] starting backend
+2024-04-03 17:30:51,874 INFO    MainThread:26736 [wandb_init.py:init():618] setting up manager
+2024-04-03 17:30:51,877 INFO    MainThread:26736 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-04-03 17:30:51,880 INFO    MainThread:26736 [wandb_init.py:init():624] backend started and connected
+2024-04-03 17:30:51,888 INFO    MainThread:26736 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-04-03 17:30:51,889 INFO    MainThread:26736 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-04-03 17:30:51,890 INFO    MainThread:26736 [wandb_init.py:init():716] updated telemetry
+2024-04-03 17:30:51,947 INFO    MainThread:26736 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-04-03 17:30:53,694 INFO    MainThread:26736 [wandb_run.py:_on_init():2254] communicating current version
+2024-04-03 17:30:54,648 INFO    MainThread:26736 [wandb_run.py:_on_init():2263] got version response upgrade_message: "wandb version 0.16.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-04-03 17:30:54,648 INFO    MainThread:26736 [wandb_init.py:init():800] starting run threads in backend
+2024-04-03 17:30:54,879 INFO    MainThread:26736 [wandb_run.py:_console_start():2233] atexit reg
+2024-04-03 17:30:54,879 INFO    MainThread:26736 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-04-03 17:30:54,879 INFO    MainThread:26736 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-04-03 17:30:54,880 INFO    MainThread:26736 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-04-03 17:30:54,880 INFO    MainThread:26736 [wandb_init.py:init():841] run started, returning control to user process
+2024-04-03 17:30:54,881 INFO    MainThread:26736 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 100, 'pad_length': 20, 'node_length': 21, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl', 'test_data_name': 'accidents'}
+2024-04-03 17:30:55,093 INFO    MainThread:26736 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:30:55,093 INFO    MainThread:26736 [wandb_init.py:_pause_backend():435] pausing backend
+2024-04-03 17:30:55,356 INFO    MainThread:26736 [wandb_init.py:_resume_backend():440] resuming backend
+2024-04-03 17:30:55,358 INFO    MainThread:26736 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:30:55,358 INFO    MainThread:26736 [wandb_init.py:_pause_backend():435] pausing backend
+2024-04-03 17:30:55,614 INFO    MainThread:26736 [wandb_init.py:_resume_backend():440] resuming backend
+2024-04-03 17:31:09,435 INFO    MainThread:26736 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:31:09,435 INFO    MainThread:26736 [wandb_init.py:_pause_backend():435] pausing backend
+2024-04-03 17:31:09,745 INFO    MainThread:26736 [wandb_init.py:_resume_backend():440] resuming backend
+2024-04-03 17:31:09,748 INFO    MainThread:26736 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-04-03 17:31:09,748 INFO    MainThread:26736 [wandb_init.py:_pause_backend():435] pausing backend

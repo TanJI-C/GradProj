@@ -18,16 +18,17 @@ class TanJI(pl.LightningModule):
             ),
             num_layers=1,
         )
-        self.mlp = [configs.node_length * configs.pad_length, 128, 64]
+        self.node_length = configs.node_length
+        self.mlp_dim = [configs.node_length * configs.pad_length, 128, 64]
         self.mlp = nn.Sequential(
             *[
-                nn.Linear(self.mlp[0], self.mlp[1]),
+                nn.Linear(self.mlp_dim[0], self.mlp_dim[1]),
                 nn.Dropout(configs.dropout),
                 nn.ReLU(),
-                nn.Linear(self.mlp[1], self.mlp[2]),
+                nn.Linear(self.mlp_dim[1], self.mlp_dim[2]),
                 nn.Dropout(configs.dropout),
                 nn.ReLU(),
-                nn.Linear(self.mlp[2], configs.output_dim),
+                nn.Linear(self.mlp_dim[2], configs.output_dim),
             ]
         )
         self.sigmoid = nn.Sigmoid()
@@ -39,7 +40,7 @@ class TanJI(pl.LightningModule):
         # one node is 9 bits
         feature = feature.view(feature.shape[0], -1, self.node_length) # 保证是三维的，第一维是batch，第二维是seq_len，第三维是input_size
         out = self.tranformer_encoder(feature, mask=atten_mask)
-        out = out.view(out.shape[0], -1)
+        out = out.view(feature.shape[0], -1)
         out = self.mlp(out)
         out = self.sigmoid(out)
         return out
@@ -72,7 +73,7 @@ class TanJI(pl.LightningModule):
     def test_step(self, batch, batch_idx):
         seqs, atten_mask, loss_mask, labels = batch
         outputs = self(seqs, atten_mask)
-        loss = self.loss_q_error(outputs, labels, loss_mask)
+        loss = self.loss_q_error(outputs[:,0], labels[:,0], loss_mask)
         return loss
 
     def configure_optimizers(self):
@@ -85,7 +86,7 @@ class PLTrainer(pl.Trainer):
     def __init__(self, *args, **kwargs):
         super(PLTrainer, self).__init__(*args, **kwargs)
 
-    def test(self, model, dataloaders=None, ckpt_path=None):
+    def test(self, model, dataloaders=None, ckpt_path=None, test_data_name=None):
         if dataloaders is None:
             if self.test_dataloaders is None:
                 raise ValueError(
@@ -104,10 +105,16 @@ class PLTrainer(pl.Trainer):
         qerrors = torch.cat(qerrors, dim=0)
         # save test loss, median, 90th, 95th, 99th, max and mean in a dict
         test_metrics = {}
-        test_metrics["50th test loss"] = torch.quantile(qerrors, 0.5).item()
-        test_metrics["90th test loss"] = torch.quantile(qerrors, 0.9).item()
-        test_metrics["95th test loss"] = torch.quantile(qerrors, 0.95).item()
-        test_metrics["mean test loss"] = torch.mean(qerrors).item()
+        # test_metrics["50th test loss"] = torch.quantile(qerrors, 0.5).item()
+        # test_metrics["90th test loss"] = torch.quantile(qerrors, 0.9).item()
+        # test_metrics["95th test loss"] = torch.quantile(qerrors, 0.95).item()
+        # test_metrics["99th test loss"] = torch.quantile(qerrors, 0.99).item()
+        # test_metrics["mean test loss"] = torch.mean(qerrors).item()
+        # test_metrics["max test loss"] = torch.max(qerrors).item()
+
+        test_metrics[test_data_name + " 50th test loss"] = torch.quantile(qerrors, 0.5).item()
+
+
         # report test loss, median, 90th, 95th, 99th, max and mean in logger
         for k, v in test_metrics.items():
             self.logger.log_metrics({k: v})

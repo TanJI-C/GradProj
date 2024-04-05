@@ -1,0 +1,118 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.9
+    cli_version: 0.16.0
+    framework: huggingface
+    huggingface_version: 4.25.1
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1712132658.869871
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      - 71
+      - 105
+      2:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      - 71
+      - 105
+      3:
+      - 7
+      - 13
+      - 23
+      4: 3.10.9
+      5: 0.16.0
+      6: 4.25.1
+      8:
+      - 1
+      - 3
+      - 5
+      13: windows-amd64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: 50th test loss
+      5: 1
+      6:
+      - 1
+    - 1: 90th test loss
+      5: 1
+      6:
+      - 1
+    - 1: 95th test loss
+      5: 1
+      6:
+      - 1
+    - 1: mean test loss
+      5: 1
+      6:
+      - 1
+project_name:
+  desc: null
+  value: TanJI
+test_database_ids:
+  desc: null
+  value:
+  - 13
+random_seed:
+  desc: null
+  value: 114514
+batch_size:
+  desc: null
+  value: 1000
+accelerator:
+  desc: null
+  value: cpu
+progress_bar:
+  desc: null
+  value: true
+lr:
+  desc: null
+  value: 0.001
+dropout:
+  desc: null
+  value: 0.2
+epochs:
+  desc: null
+  value: 100
+pad_length:
+  desc: null
+  value: 20
+node_length:
+  desc: null
+  value: 21
+hidden_dim:
+  desc: null
+  value: 192
+output_dim:
+  desc: null
+  value: 1
+newpath:
+  desc: null
+  value: ./results/full/cost/
+to_predict:
+  desc: null
+  value: cost
+dataset_file_name:
+  desc: null
+  value: alldataset.pkl

@@ -1,0 +1,24 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])
+torch.Size([10000, 1, 420]) torch.Size([10000, 20, 20]) torch.Size([10000, 20]) torch.Size([10000, 20])

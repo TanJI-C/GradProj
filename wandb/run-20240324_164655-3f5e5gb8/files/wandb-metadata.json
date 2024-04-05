@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.9",
+    "heartbeatAt": "2024-03-24T08:46:58.109425",
+    "startedAt": "2024-03-24T08:46:55.223939",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:TanJI-C/GradProj.git",
+        "commit": "37e96f0d4fe3fe3d7611da1ce0a4616a3ec30efa"
+    },
+    "email": "2795622656@qq.com",
+    "root": "D:/TanJI/Documents/document/Work/Research/DB4AI/2024\u5c4a\u672c\u79d1\u6bd5\u4e1a\u8bba\u6587\uff08\u8bbe\u8ba1\uff09\u5de5\u4f5c\u6307\u5357(1)/TanJI",
+    "host": "TanJI",
+    "username": "TanJI",
+    "executable": "c:\\Users\\TanJI\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2100.0,
+        "min": 0.0,
+        "max": 2100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 2100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 224.28710556030273,
+            "used": 176.08814239501953
+        }
+    },
+    "memory": {
+        "total": 15.366016387939453
+    }
+}

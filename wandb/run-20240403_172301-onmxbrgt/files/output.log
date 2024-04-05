@@ -1,0 +1,5 @@
+
+torch.Size([60, 1, 420]) torch.Size([60, 20, 20]) torch.Size([60, 20]) torch.Size([60, 20])
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs

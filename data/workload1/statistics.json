@@ -38,7 +38,11 @@
             "Nested Loop": 12,
             "Materialize": 13,
             "BitmapOr": 14,
-            "Memoize": 15
+            "Memoize": 15,
+            "Gather": 16,
+            "Gather Merge": 17,
+            "BitmapAnd": 18
+
         }
     }
 }

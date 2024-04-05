@@ -31,3 +31,105 @@ config: {}
 2024-03-19 00:13:00,564 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 18, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
 2024-03-19 00:13:00,823 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
 2024-03-19 00:13:00,823 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:16:21,708 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:16:22,506 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:16:22,506 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:20:03,182 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:20:04,398 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:20:04,398 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:20:11,271 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:20:11,297 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 18, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
+2024-03-19 00:20:11,332 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:20:11,333 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:20:13,907 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:20:14,067 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:20:14,067 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:21:59,673 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:21:59,704 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:21:59,704 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:22:06,091 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:22:06,094 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:22:06,094 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:22:12,852 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:22:12,859 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 18, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
+2024-03-19 00:22:12,896 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:22:12,896 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:22:15,860 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:25:01,875 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:25:01,875 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:25:11,578 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:25:11,581 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:25:11,581 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:25:13,210 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:25:13,241 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:25:13,241 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:25:13,694 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:25:30,115 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:25:30,115 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:25:30,451 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:25:30,457 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:25:30,457 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:38:18,690 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:38:18,697 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 18, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
+2024-03-19 00:38:18,736 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:38:18,736 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:38:20,729 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:39:31,612 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:39:31,612 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:53:48,513 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:53:48,514 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:53:48,514 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:53:49,819 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:53:49,833 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:53:49,833 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:54:38,176 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:54:51,889 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:54:51,889 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:55:37,782 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:55:37,786 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:55:37,786 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:55:40,666 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:55:40,673 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:55:40,673 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:56:09,920 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:56:09,933 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:56:09,933 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:56:17,130 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:56:40,834 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:56:40,834 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:57:51,180 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:57:51,202 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:57:51,202 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 00:57:53,709 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 00:59:44,129 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 00:59:44,129 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:01:49,015 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:01:50,226 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:01:50,227 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:01:51,338 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:01:51,351 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 21, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
+2024-03-19 01:01:51,429 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:01:51,430 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:01:53,626 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:02:50,603 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:02:50,603 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:17:16,959 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:17:16,964 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 21, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
+2024-03-19 01:17:17,282 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:17:17,282 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:17:34,507 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:17:34,520 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:17:34,520 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:17:38,100 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:19:47,893 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:19:47,893 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:19:48,154 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:19:49,683 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:19:49,683 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:19:50,660 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 01:19:50,676 INFO    MainThread:39136 [wandb_run.py:_config_callback():1342] config_cb None None {'project_name': 'TanJI', 'test_database_ids': [13], 'random_seed': 114514, 'batch_size': 1000, 'accelerator': 'cpu', 'progress_bar': True, 'lr': 0.001, 'dropout': 0.2, 'epochs': 200, 'pad_length': 20, 'node_length': 21, 'hidden_dim': 192, 'output_dim': 1, 'newpath': './results/full/cost/', 'to_predict': 'cost', 'dataset_file_name': 'alldataset.pkl'}
+2024-03-19 01:19:50,725 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 01:19:50,725 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend
+2024-03-19 01:19:53,310 INFO    MainThread:39136 [wandb_init.py:_resume_backend():440] resuming backend
+2024-03-19 02:05:26,074 INFO    MainThread:39136 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-19 02:05:26,074 INFO    MainThread:39136 [wandb_init.py:_pause_backend():435] pausing backend

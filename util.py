@@ -93,7 +93,7 @@ class Encoder:
     # 使用one-hot对node_type进行编码
     # 使用scaler对估计代价和行数进行预处理
     # 同时得到attention_mask: 去掉pdding数据的影响以及保留树型特征（只保留有父子关系）
-    def __init__(self, feature_statistics):
+    def __init__(self, feature_statistics, configs):
         # onehot
         self.type_to_one_hot_dict = {}
         type_to_index_dict = feature_statistics['node_types']['value_dict']
@@ -117,8 +117,8 @@ class Encoder:
         # MAX_time
         self.max_cost = feature_statistics['Actual Total Time']['max']
 
-        self.pad_length = 20
-        self.node_length = 18
+        self.pad_length = configs.pad_length
+        self.node_length = configs.node_length
         
         self.padding_value_for_feature = 0
         self.padding_value_for_label = 1
@@ -158,31 +158,34 @@ class Encoder:
             input_feature.append(input_feature_tmp)
             
             # pad_length label
-            ''' 
             label_tmp = torch.tensor(label_tmp)
             label_tmp = torch.nn.functional.pad(
                 label_tmp,
                 (0, self.pad_length - label_tmp.shape[0]),
                 value = self.padding_value_for_label
             )
-            label.append(label_tmp)
+            label.append(label_tmp / self.max_cost + 1e-7)
             '''
             # one label
             label.append(torch.tensor([tree_nodes_item[0].label / self.max_cost + 1e-7]))
+            ''' 
 
             # pad_length loss_mask
-            '''
             loss_mask_tmp = torch.from_numpy(loss_mask_tmp)
             loss_mask.append(loss_mask_tmp)
             '''
             # one loss_mask
             loss_mask.append(torch.tensor([np.power(self.loss_weight, tree_nodes_item[0].dep)]))
+            '''
 
             # get atten_mask
             atten_tuples = self.dfs2atten_recursive(tree_nodes_item[0], [])
             atten_mask_tmp = torch.ones((self.pad_length, self.pad_length))
             for u, v in atten_tuples:
                 atten_mask_tmp[u][v] = 0
+            # attention itself
+            for idx in range(self.pad_length):
+                atten_mask_tmp[idx][idx] = 0
             # test 
             atten_mask.append(atten_mask_tmp)
 
@@ -198,9 +201,9 @@ class Encoder:
     def dfs2atten_recursive(self, root: TreeNode, grandfa) -> List[Tuple]:
         index = root.index
         result = []
-        grandfa.append(index)
         for u in grandfa:
             result.append((u, index))
+        grandfa.append(index)
         
         for u in root.children:
             result_son = self.dfs2atten_recursive(u, grandfa)
@@ -274,6 +277,22 @@ class Encoder:
                     nodes.append(json_item)
         return nodes
 
+    def format_imdb_test(files_path):
+        if isinstance(files_path, str):
+            files_path = [files_path]
+        nodes = []
+        for db_id, file_name in enumerate(files_path):
+            with open(file_name) as jf:
+                json_file = json.load(jf)
+                for json_item in json_file:
+                    json_item_tmp = json_item["plan"][0][0][0]
+                    if json_item_tmp["Plan"]["Actual Total Time"] < 100:
+                        continue
+                    json_item_tmp['database_id'] = db_id
+                    nodes.append(json_item_tmp)
+        return nodes
+        
+
 
 # dataset
 class PlanTreeDataSet(Dataset):
@@ -343,3 +362,4 @@ def get_dataloader(data_set, configs):
     val_dataloader = DataLoader(dataset=val_data, batch_size=bs, shuffle=True)
     test_dataloader = DataLoader(dataset=test_data, batch_size=bs, shuffle=True)
     return train_dataloader, val_dataloader, test_dataloader
+

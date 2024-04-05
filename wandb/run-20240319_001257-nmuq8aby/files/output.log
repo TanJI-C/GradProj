@@ -1,3 +1,1682 @@
 GPU available: False, used: False
 TPU available: False, using: 0 TPU cores
 IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 8.6 K
+1 | mlp                | Sequential         | 54.5 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+63.1 K    Trainable params
+0         Non-trainable params
+63.1 K    Total params
+0.252     Total estimated model params size (MB)
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:490: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Sanity Checking DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]5 4 4
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 8.6 K
+1 | mlp                | Sequential         | 54.5 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+63.1 K    Trainable params
+0         Non-trainable params
+63.1 K    Total params
+0.252     Total estimated model params size (MB)
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+
+Epoch 0:   7%|▋         | 6/86 [00:00<00:12,  6.17it/s, v_num=8aby]
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 8.6 K
+1 | mlp                | Sequential         | 54.5 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+63.1 K    Trainable params
+0         Non-trainable params
+63.1 K    Total params
+0.252     Total estimated model params size (MB)
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:490: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\activation.py:1160: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ..\aten\src\ATen\native\transformers\attention.cpp:152.)
+  return torch._native_multi_head_attention(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+Epoch 0: 100%|██████████| 86/86 [00:13<00:00,  6.49it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7: 100%|██████████| 86/86 [00:14<00:00,  5.85it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 11:   9%|▉         | 8/86 [00:01<00:14,  5.31it/s, v_num=8aby]
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\call.py:53: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+
+
+Epoch 11:  22%|██▏       | 19/86 [00:03<00:11,  5.81it/s, v_num=8aby]5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d6.27.05dc3a68c-e34e-4080-9c3e-2a532b2ccb4d
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\callbacks\model_checkpoint.py:617: UserWarning: Checkpoint directory D:\TanJI\Documents\document\Work\Research\DB4AI\2024届本科毕业论文（设计）工作指南(1)\TanJI\checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 8.6 K
+1 | mlp                | Sequential         | 54.5 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+63.1 K    Trainable params
+0         Non-trainable params
+63.1 K    Total params
+0.252     Total estimated model params size (MB)
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:490: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\activation.py:1160: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ..\aten\src\ATen\native\transformers\attention.cpp:152.)
+  return torch._native_multi_head_attention(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Epoch 11:  22%|██▏       | 19/86 [00:18<01:03,  1.05it/s, v_num=8aby]
+
+
+
+
+
+Epoch 11:  14%|█▍        | 12/86 [00:11<01:09,  1.07it/s, v_num=8aby]
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\call.py:53: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+
+Epoch 11:  16%|█▋        | 14/86 [00:13<01:07,  1.07it/s, v_num=8aby]
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 8.6 K
+1 | mlp                | Sequential         | 54.5 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+63.1 K    Trainable params
+0         Non-trainable params
+63.1 K    Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1: 100%|██████████| 86/86 [00:14<00:00,  6.07it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  71%|███████   | 61/86 [00:11<00:04,  5.51it/s, v_num=8aby]{'Index Only Scan': 0, 'Index Scan': 1, 'Seq Scan': 2, 'Hash Join': 3, 'Bitmap Index Scan': 4, 'Result': 5, 'Merge Join': 6, 'Limit': 7, 'Aggregate': 8, 'Sort': 9, 'Hash': 10, 'Bitmap Heap Scan': 11, 'Nested Loop': 12, 'Materialize': 13, 'BitmapOr': 14, 'Memoize': 15, 'Gather': 16}
+{'Actual Total Time': RobustScaler(), 'Plan Rows': RobustScaler(), 'Total Cost': RobustScaler()}
+Epoch 11:  16%|█▋        | 14/86 [29:27<2:31:31, 126.27s/it, v_num=8aby]
+{'Index Only Scan': 0, 'Index Scan': 1, 'Seq Scan': 2, 'Hash Join': 3, 'Bitmap Index Scan': 4, 'Result': 5, 'Merge Join': 6, 'Limit': 7, 'Aggregate': 8, 'Sort': 9, 'Hash': 10, 'Bitmap Heap Scan': 11, 'Nested Loop': 12, 'Materialize': 13, 'BitmapOr': 14, 'Memoize': 15, 'Gather': 16}
+{'Actual Total Time': RobustScaler(), 'Plan Rows': RobustScaler(), 'Total Cost': RobustScaler()}
+{'Index Only Scan': 0, 'Index Scan': 1, 'Seq Scan': 2, 'Hash Join': 3, 'Bitmap Index Scan': 4, 'Result': 5, 'Merge Join': 6, 'Limit': 7, 'Aggregate': 8, 'Sort': 9, 'Hash': 10, 'Bitmap Heap Scan': 11, 'Nested Loop': 12, 'Materialize': 13, 'BitmapOr': 14, 'Memoize': 15, 'Gather': 16, 'Gather Merge': 17}
+{'Actual Total Time': RobustScaler(), 'Plan Rows': RobustScaler(), 'Total Cost': RobustScaler()}
+{'Index Only Scan': 0, 'Index Scan': 1, 'Seq Scan': 2, 'Hash Join': 3, 'Bitmap Index Scan': 4, 'Result': 5, 'Merge Join': 6, 'Limit': 7, 'Aggregate': 8, 'Sort': 9, 'Hash': 10, 'Bitmap Heap Scan': 11, 'Nested Loop': 12, 'Materialize': 13, 'BitmapOr': 14, 'Memoize': 15, 'Gather': 16, 'Gather Merge': 17, 'BitmapAnd': 18}
+{'Actual Total Time': RobustScaler(), 'Plan Rows': RobustScaler(), 'Total Cost': RobustScaler()}
+torch.Size([100000, 1, 420]) torch.Size([100000, 20, 20]) torch.Size([100000, 1]) torch.Size([100000, 1])
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+5 4 4
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\callbacks\model_checkpoint.py:617: UserWarning: Checkpoint directory D:\TanJI\Documents\document\Work\Research\DB4AI\2024届本科毕业论文（设计）工作指南(1)\TanJI\checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 10.2 K
+1 | mlp                | Sequential         | 62.2 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+72.4 K    Trainable params
+0         Non-trainable params
+72.4 K    Total params
+0.290     Total estimated model params size (MB)
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:490: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\activation.py:1160: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ..\aten\src\ATen\native\transformers\attention.cpp:152.)
+  return torch._native_multi_head_attention(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2: 100%|██████████| 86/86 [00:15<00:00,  5.45it/s, v_num=8aby]
+
+
+
+Epoch 3:  37%|███▋      | 32/86 [00:05<00:09,  5.65it/s, v_num=8aby]
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\call.py:53: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+
+Epoch 3:  38%|███▊      | 33/86 [00:05<00:09,  5.66it/s, v_num=8aby]
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+Epoch 3:  38%|███▊      | 33/86 [00:05<00:09,  5.66it/s, v_num=8aby]{'Index Only Scan': 0, 'Index Scan': 1, 'Seq Scan': 2, 'Hash Join': 3, 'Bitmap Index Scan': 4, 'Result': 5, 'Merge Join': 6, 'Limit': 7, 'Aggregate': 8, 'Sort': 9, 'Hash': 10, 'Bitmap Heap Scan': 11, 'Nested Loop': 12, 'Materialize': 13, 'BitmapOr': 14, 'Memoize': 15, 'Gather': 16, 'Gather Merge': 17, 'BitmapAnd': 18}
+{'Actual Total Time': RobustScaler(), 'Plan Rows': RobustScaler(), 'Total Cost': RobustScaler()}
+Epoch 4:  71%|███████   | 61/86 [38:25<15:44, 37.80s/it, v_num=8aby]
+Epoch 3:  38%|███▊      | 33/86 [15:01<24:07, 27.32s/it, v_num=8aby]
+torch.Size([100000, 1, 420]) torch.Size([100000, 20, 20]) torch.Size([100000, 20]) torch.Size([100000, 20])
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\loggers\wandb.py:398: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+5 4 4
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\callbacks\model_checkpoint.py:617: UserWarning: Checkpoint directory D:\TanJI\Documents\document\Work\Research\DB4AI\2024届本科毕业论文（设计）工作指南(1)\TanJI\checkpoints exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+  | Name               | Type               | Params
+----------------------------------------------------------
+0 | tranformer_encoder | TransformerEncoder | 10.2 K
+1 | mlp                | Sequential         | 62.2 K
+2 | sigmoid            | Sigmoid            | 0
+----------------------------------------------------------
+72.4 K    Trainable params
+0         Non-trainable params
+72.4 K    Total params
+0.290     Total estimated model params size (MB)
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:490: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\activation.py:1160: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ..\aten\src\ATen\native\transformers\attention.cpp:152.)
+  return torch._native_multi_head_attention(
+c:\Users\TanJI\AppData\Local\Programs\Python\Python310\lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:442: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2: 100%|██████████| 86/86 [00:16<00:00,  5.26it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7: 100%|██████████| 86/86 [00:13<00:00,  6.49it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 14: 100%|██████████| 86/86 [00:12<00:00,  6.64it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 18: 100%|██████████| 86/86 [00:15<00:00,  5.64it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 21: 100%|██████████| 86/86 [00:13<00:00,  6.15it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 31: 100%|██████████| 86/86 [00:13<00:00,  6.49it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 34: 100%|██████████| 86/86 [00:13<00:00,  6.61it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 38: 100%|██████████| 86/86 [00:12<00:00,  6.63it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 45: 100%|██████████| 86/86 [00:13<00:00,  6.57it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 48: 100%|██████████| 86/86 [00:13<00:00,  6.61it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 54: 100%|██████████| 86/86 [00:13<00:00,  6.53it/s, v_num=8aby]
+
+
+
+
+
+
+Epoch 55: 100%|██████████| 86/86 [00:13<00:00,  6.55it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 58: 100%|██████████| 86/86 [00:12<00:00,  6.62it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 66: 100%|██████████| 86/86 [00:13<00:00,  6.57it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 70: 100%|██████████| 86/86 [00:13<00:00,  6.59it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 91: 100%|██████████| 86/86 [00:13<00:00,  6.48it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 106: 100%|██████████| 86/86 [00:13<00:00,  6.60it/s, v_num=8aby]
+
+
+
+
+
+
+Epoch 107: 100%|██████████| 86/86 [00:13<00:00,  6.53it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 117: 100%|██████████| 86/86 [00:13<00:00,  6.60it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 123: 100%|██████████| 86/86 [00:13<00:00,  6.61it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 126: 100%|██████████| 86/86 [00:12<00:00,  6.63it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 130: 100%|██████████| 86/86 [00:13<00:00,  6.59it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 134: 100%|██████████| 86/86 [00:13<00:00,  6.54it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 137: 100%|██████████| 86/86 [00:13<00:00,  6.58it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 140: 100%|██████████| 86/86 [00:13<00:00,  6.55it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 145: 100%|██████████| 86/86 [00:13<00:00,  6.58it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 150: 100%|██████████| 86/86 [00:12<00:00,  6.65it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 155: 100%|██████████| 86/86 [00:12<00:00,  6.66it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 159: 100%|██████████| 86/86 [00:13<00:00,  6.60it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 162: 100%|██████████| 86/86 [00:12<00:00,  6.67it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 171: 100%|██████████| 86/86 [00:12<00:00,  6.67it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 186: 100%|██████████| 86/86 [00:12<00:00,  6.65it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 192: 100%|██████████| 86/86 [00:12<00:00,  6.67it/s, v_num=8aby]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 199: 100%|██████████| 86/86 [00:13<00:00,  6.38it/s, v_num=8aby]

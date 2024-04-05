@@ -1,0 +1,1 @@
+{"train_loss": 2.726365089416504, "epoch": 199, "trainer/global_step": 17199, "_timestamp": 1711265279.9667106, "_runtime": 3035.8978345394135, "_step": 547, "val_loss": 2.0876102447509766, "50th test loss": 1.2104837894439697, "90th test loss": 3.4607789516448975, "95th test loss": 5.46347713470459, "mean test loss": 2.0933516025543213}
